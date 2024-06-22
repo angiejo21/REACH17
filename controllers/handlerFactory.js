@@ -22,7 +22,13 @@ export const getOne = (Model) => {
       doc = await Model.findById(req.params.id);
     }
     if (!doc) {
-      return next(new AppError("No document found with that id/name", 404));
+      let model = req.baseUrl.split("/").at(-1).slice(0, -1);
+      return next(
+        new AppError(
+          `No ${model} found with that ${req.params.slug ? "name" : "id"}`,
+          404
+        )
+      );
     }
     res.status(200).json({
       status: "success",
@@ -64,7 +70,13 @@ export const updateOne = (Model) => {
       });
     }
     if (!doc) {
-      return next(new AppError("No document found with that id/name", 404));
+      let model = req.baseUrl.split("/").at(-1).slice(0, -1);
+      return next(
+        new AppError(
+          `No ${model} found with that ${req.params.slug ? "name" : "id"}`,
+          404
+        )
+      );
     }
     res.status(200).json({
       status: "success",
@@ -82,7 +94,13 @@ export const deleteOne = (Model) => {
       doc = await Model.findByIdAndDelete(req.params.id);
     }
     if (!doc) {
-      return next(new AppError("No document found with that id/name", 404));
+      let model = req.baseUrl.split("/").at(-1).slice(0, -1);
+      return next(
+        new AppError(
+          `No ${model} found with that ${req.params.slug ? "name" : "id"}`,
+          404
+        )
+      );
     }
     res.status(204).json({
       status: "success",
