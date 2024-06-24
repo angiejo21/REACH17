@@ -14,6 +14,7 @@ const schoolSchema = new mongoose.Schema(
       type: String,
       trim: true,
       required: [true, "A school must have a short description"],
+      maxlength: [250, "The description must be less than 250 characters long"],
     },
     longDescription: { type: String, trim: true },
     courses: [

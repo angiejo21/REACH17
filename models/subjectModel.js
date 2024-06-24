@@ -8,10 +8,15 @@ const subjectSchema = new mongoose.Schema(
       required: [true, "A subject must have a name"],
       unique: true,
       trim: true,
-      maxlength: [25, "The name must be less than 20 characters long"],
+      maxlength: [50, "The name must be less than 50 characters long"],
     },
     slug: String,
-    courses: [],
+    courses: [
+      {
+        type: mongoose.Schema.ObjectId,
+        ref: "Course",
+      },
+    ],
   },
   { timestamps: true }
 );
