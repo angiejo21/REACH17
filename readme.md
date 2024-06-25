@@ -218,6 +218,7 @@ DELETE/schools/:slug
 ```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 ### Subject API
 
 #### Document Structure
@@ -277,7 +278,7 @@ Project Link: [https://github.com/angiejo21/REACH17](https://github.com/angiejo2
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 
-[license-shield]: https://img.shields.io/github/license/angiejo21/REACH.svg?style=for-the-badge
+[license-shield]: https://img.shields.io/github/license/angiejo21/REACH17.svg?style=for-the-badge
 [license-url]: https://github.com/angiejo21/REACH17/blob/master/LICENSE
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://www.linkedin.com/in/angelabello/
