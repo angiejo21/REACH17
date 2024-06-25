@@ -4,7 +4,7 @@
 
 <br />
 <div align="center">
-  <a href="https://github.com/angiejo21/REACH17">
+  <a href="https://reach17-ri2v.onrender.com/api/v1/courses" target='blank'>
     <img src="./public/img/logo_full_lightBack.svg" alt="Logo" width="100" height="100">
   </a>
 <h3 align="center">REACH17 | NodeJS JSON RESTful API</h3>
@@ -76,6 +76,8 @@ Reach17 is an educational platform that was inspired by the **UN** _Sustainable 
 - Express
 - MongoDB
 
+> Live on [Render](https://reach17-ri2v.onrender.com/api/v1/courses)
+
 ### Installation
 
 `Git bash` and `Node.js` are required for correct installation.
@@ -140,31 +142,31 @@ GET/route/search?parameter=value&parameter=value
 #### Get All courses
 
 ```http
-GET/courses
+GET/api/v1/courses
 ```
 
 #### Get one course
 
 ```http
-GET/courses/:id
+GET/api/v1/courses/:id
 ```
 
 #### Create one course
 
 ```http
-POST/courses/
+POST/api/v1/courses/
 ```
 
 #### Update one course
 
 ```http
-PATCH/courses/:id
+PATCH/api/v1/courses/:id
 ```
 
 #### Delete one course
 
 ```http
-DELETE/courses/:id
+DELETE/api/v1/courses/:id
 ```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -184,37 +186,37 @@ DELETE/courses/:id
 #### Get All schools
 
 ```http
-GET/schools
+GET/api/v1/schools
 ```
 
 #### Get one school
 
 ```http
-GET/schools/:slug
+GET/api/v1/schools/:slug
 ```
 
 #### Get all school's subjects
 
 ```http
-GET/schools/:slug/subjects
+GET/api/v1/schools/:slug/subjects
 ```
 
 #### Create one school
 
 ```http
-POST/schools/
+POST/api/v1/schools/
 ```
 
 #### Update one school
 
 ```http
-PATCH/schools/:slug
+PATCH/api/v1/schools/:slug
 ```
 
 #### Delete one school
 
 ```http
-DELETE/schools/:slug
+DELETE/api/v1/schools/:slug
 ```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -232,31 +234,31 @@ DELETE/schools/:slug
 #### Get All subjects
 
 ```http
-GET/subjects
+GET/api/v1/subjects
 ```
 
 #### Get one subject
 
 ```http
-GET/subjects/:slug
+GET/api/v1/subjects/:slug
 ```
 
 #### Create one subject
 
 ```http
-POST/subjects/
+POST/api/v1/subjects/
 ```
 
 #### Update one subject
 
 ```http
-PATCH/subjects/:slug
+PATCH/api/v1/subjects/:slug
 ```
 
 #### Delete one subject
 
 ```http
-DELETE/subjects/:slug
+DELETE/api/v1/subjects/:slug
 ```
 
 <!-- LICENSE -->
