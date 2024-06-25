@@ -2,11 +2,11 @@ import dotenv from "dotenv";
 import mongoose from "mongoose";
 
 //Error in Sync code - In case of errors outside of express
-// process.on("uncaughtException", (err) => {
-//   console.log("💥UNCAUGHT EXCEPTION! Shutting down...");
-//   console.log(`${err.name}: ${err.message}`);
-//   process.exit(1); //0 - success 1 - uncalled exeption
-// });
+process.on("uncaughtException", (err) => {
+  console.log("💥UNCAUGHT EXCEPTION! Shutting down...");
+  console.log(`${err.name}: ${err.message}`);
+  process.exit(1); //0 - success 1 - uncalled exeption
+});
 
 dotenv.config({ path: "./config.env" });
 
